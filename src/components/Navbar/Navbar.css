@@ -1,0 +1,58 @@
+*{
+    font-family: 'Jost', sans-serif;
+    
+    font: size 50px;
+
+}
+.head {
+    
+
+    font-size: 35px;
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ededed ;
+    padding: 0px 70px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 8px 20px;
+    position : relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+#navbar li a:hover
+#navbar li a.active{
+    color:#17cf97;
+}
+
+#navbar li a:hover::after
+#navbar li a:active::after{
+    content: "";
+    width: 10%;
+    height:0px;
+    background: #17cf97;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+
+}
+.icon {
+    font-size: 30px;
+}
