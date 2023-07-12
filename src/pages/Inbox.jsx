@@ -8,4 +8,4 @@ const Inbox = () => {
     );
 };
 
-export default About;
+export default Inbox;

@@ -4,10 +4,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar';
 import Dashboard from './pages/Dashboard.jsx';
-import About from './pages/About.jsx';
+import Inbox from './pages/Inbox.jsx';
 import Analytics from './pages/Analytics.jsx';
-import Product from './pages/Product.jsx';
-import ProductList from './pages/ProductList.jsx';
+import Tickets from './pages/Tickets.jsx';
+import Settings from './pages/Settings.jsx';
 
 const App = () => {
   return (
@@ -17,11 +17,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Inbox />} />
           
           <Route path="/analytics" element={<Analytics />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/productList" element={<ProductList />} />
+          <Route path="/product" element={<Tickets />} />
+          <Route path="/productList" element={<Settings />} />
         </Routes>
       </Sidebar>
     </BrowserRouter>
